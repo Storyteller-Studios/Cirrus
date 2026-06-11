@@ -4,7 +4,14 @@
   Cirrus
   <br/>
   <a href="https://github.com/brandonw3612/Cirrus/blob/main/LICENSE">
-    <img alt="GitHub" src="https://img.shields.io/github/license/brandonw3612/Cirrus?label=License">
+    <img alt="GitHub" src="https://img.shields.io/github/license/brandonw3612/Cirrus">
+  </a>
+  <br/>
+  <a href="https://github.com/brandonw3612/Cirrus/blob/main/README.md">
+    <img alt="GitHub ReadMe English" src="https://img.shields.io/badge/README-English-lightgray?logo=github">
+  </a>
+  <a href="https://github.com/brandonw3612/Cirrus/blob/main/README-ZH.md">
+    <img alt="GitHub ReadMe Chinese" src="https://img.shields.io/badge/README-中文-lightgray?logo=github">
   </a>
 </h1>
 
