@@ -60,7 +60,7 @@
         <ProjectReference Include="..\Cirrus.Network\Cirrus.Network.csproj" />
         <ProjectReference Include="..\Cirrus.Playback\Cirrus.Playback.csproj" />
         <ProjectReference Include="..\Cirrus.SourceGenerators\Cirrus.SourceGenerators.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
-        <ProjectReference Include="..\Impressionist\Impressionist\Impressionist.csproj" />
+        <ProjectReference Include="..\Impressionist\Impressionist.csproj" />
     </ItemGroup>
 
     <ItemGroup>

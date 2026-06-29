@@ -16,7 +16,5 @@
     <Platform Solution="*|x64" Project="x64" />
     <Deploy />
   </Project>
-  <Project Path="src/Impressionist/Impressionist/Impressionist.csproj">
-    <Platform Solution="*|x64" Project="x64" />
-  </Project>
+  <Project Path="src/Impressionist/Impressionist.csproj" />
 </Solution>

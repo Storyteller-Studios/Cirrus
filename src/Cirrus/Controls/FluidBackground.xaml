@@ -11,5 +11,6 @@
         x:Name="BackgroundPresenter"
         CreateResources="BackgroundPresenter_CreateResources"
         Draw="BackgroundPresenter_Draw"
+        Opacity="0.75"
         Update="BackgroundPresenter_Update" />
 </UserControl>

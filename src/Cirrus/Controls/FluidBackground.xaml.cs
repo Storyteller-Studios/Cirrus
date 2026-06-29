@@ -3,7 +3,6 @@ using Cirrus.Helpers;
 using Cirrus.Resources;
 using CommunityToolkit.Mvvm.Input;
 using ComputeSharp.D2D1.WinUI;
-using Impressionist.Implementations;
 using Microsoft.Graphics.Canvas;
 using Microsoft.Graphics.Canvas.UI;
 using Microsoft.Graphics.Canvas.UI.Xaml;
@@ -62,10 +61,8 @@ public sealed partial class FluidBackground
         if (d is not FluidBackground background) return;
         if (e.NewValue is not IRandomAccessStreamReference reference) return;
         using var stream = await reference.OpenReadAsync();
-        var decoder = await BitmapDecoder.CreateAsync(stream);
-        var colors =  await ImageHelper.GetPixelColor(decoder);
-        var result = await AutoPaletteGenerator.CreatePalette(colors,4, toLab: true, useKMeansPP: true);
-        background.displayColors = [.. result.Palette.Select(t => t / 255)];
+        var result = await ColorHelper.ExtractPaletteFromStream(stream);
+        background.displayColors = [.. result.Select(t => t / 255)];
     }
 
     private static async void OnIsPlayingChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
